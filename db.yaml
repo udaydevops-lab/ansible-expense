@@ -2,7 +2,7 @@
   hosts: db
   become: yes
   vars:
-    login_host: 35.175.194.225 #db.prajai.online 
+    login_host: db.prajai.online 
     mysql_root_password: ExpenseApp@1
   tasks:
     - name: install mysql Server
