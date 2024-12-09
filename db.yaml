@@ -8,6 +8,11 @@
     - name: install mysql Server
       ansible.builtin.dnf:
         name: mysqld
+        state: latest
+
+    - name: start and enable mysql Server
+      ansible.builtin.service:
+        name: mysql-server
         state: started
         enabled: yes
 
