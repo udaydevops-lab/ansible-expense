@@ -7,12 +7,12 @@
   tasks:
     - name: install mysql Server
       ansible.builtin.dnf:
-        name: mysqld
+        name: mysql-server
         state: latest
 
     - name: start and enable mysql Server
       ansible.builtin.service:
-        name: mysql-server
+        name: mysqld
         state: started
         enabled: yes
 
